@@ -1,14 +1,8 @@
 # Cassava Leaf Disease Classification
 
-![Cassava Leaf Disease Classification](https://your-image-url.com)
+![Cassava Leaf Disease Classification](https://github.com/samy-migwi/Detect_cassava_diesease_using_computer_vision/blob/main/data/thumbnail.png?raw=true)
 
 *Classify cassava leaf diseases using deep learning techniques.*
-
-<p align="center">
-  <a href="https://github.com/yourusername/cassava-leaf-disease-classification"><img src="https://img.shields.io/github/repo-size/yourusername/cassava-leaf-disease-classification" alt="Repo Size"></a>
-  <a href="https://www.linkedin.com/in/yourprofile"><img src="https://img.shields.io/badge/LinkedIn-Connect-blue" alt="LinkedIn"></a>
-  <a href="https://saythanks.io/to/morrislelebrock@gmail.com"><img src="https://img.shields.io/badge/SayThanks-%E2%98%BC-1EAEDB.svg" alt="Say Thanks"></a>
-</p>
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -48,51 +42,14 @@ Training details:
 
 - **Optimizer**: Adam
 - **Loss Function**: Categorical Crossentropy
-- **Metrics**: Accuracy
-- **Epochs**: 50
-- **Batch Size**: 32
+- **Metrics**: Accuracy//85
+- **Epochs**: 10
+- **Batch Size**: 16
 
 Data augmentation techniques were used to improve model performance and reduce overfitting.
 
 ## Evaluation
 The model achieved an accuracy of 85% on the validation set. Metrics:
-
-- **Precision**: 0.XX
-- **Recall**: 0.XX
-- **F1-Score**: 0.XX
-
-A confusion matrix and classification report were also generated.
-
-## Installation
-To run this project locally:
-
-1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/yourusername/cassava-leaf-disease-classification.git
-    ```
-
-2. **Install dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. **Download the dataset** from Kaggle and place it in the `data/` directory.
-
-## Usage
-- **To train the model:**
-    ```bash
-    python train.py
-    ```
-
-- **To evaluate the model:**
-    ```bash
-    python evaluate.py
-    ```
-
-- **To make predictions:**
-    ```bash
-    python predict.py --image_path /path/to/image.jpg
-    ```
 
 ## Results
 The final model achieved 85% accuracy. Visualizations of model performance can be found below:
@@ -111,7 +68,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - The open-source community for their resources and tutorials.
 
 ---
-
-> [yourwebsite.com](https://yourwebsite.com) &nbsp;&middot;&nbsp;
-> GitHub [@yourusername](https://github.com/yourusername) &nbsp;&middot;&nbsp;
-> Twitter [@yourtwitterhandle](https://twitter.com/yourtwitterhandle)
