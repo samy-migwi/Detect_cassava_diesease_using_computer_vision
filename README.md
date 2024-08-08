@@ -23,17 +23,29 @@ Cassava is a vital crop in many developing countries, providing a significant so
 ## Dataset
 The dataset used for this project is from the Cassava Leaf Disease Classification competition on Kaggle.
 
-- **Number of classes**: 5
+- **brown streak**:
 - **Total images**: 21,367
 - **Training images**: 17,115
 - **Validation images**: 4,282
+  
+## Type of dieases
+![Brown streak](https://github.com/samy-migwi/Detect_cassava_diesease_using_computer_vision/blob/main/data/brownstreak.PNG?raw=true)
+- **green mattle**:
+![green mantle](https://github.com/samy-migwi/Detect_cassava_diesease_using_computer_vision/blob/main/data/green%20mottle.PNG?raw=true)
+- **Mosaic**:
+![green mantle](https://github.com/samy-migwi/Detect_cassava_diesease_using_computer_vision/blob/main/data/mosaic.PNG?raw=true) 
+- **Bacterial blight**:
+![green mantle](https://github.com/samy-migwi/Detect_cassava_diesease_using_computer_vision/blob/main/data/bacterial%20blight.PNG?raw=true)
+- **Brown streak**:
+![green mantle](https://github.com/samy-migwi/Detect_cassava_diesease_using_computer_vision/blob/main/data/brownstreak.PNG?raw=true)
 
 ## Model Architecture
 The model was built using TensorFlow and Keras. Key architectures experimented with include:
 
-- ResNet50
+- ResNet50 which achived 85%
 - EfficientNet
 - VGG16
+- and another  one from scratch that achived 65% accuracy
 
 Transfer learning was utilized with pre-trained weights from ImageNet, which were fine-tuned for this specific task.
 
@@ -46,15 +58,11 @@ Training details:
 - **Epochs**: 10
 - **Batch Size**: 16
 
-Data augmentation techniques were used to improve model performance and reduce overfitting.
+i used Data augmentation techniques  to improve model performance and reduce overfitting.
 
 ## Evaluation
-The model achieved an accuracy of 85% on the validation set. Metrics:
+My model achieved an accuracy of 85% on the validation set. Metrics:
 
-## Results
-The final model achieved 85% accuracy. Visualizations of model performance can be found below:
-
-*Include relevant visualizations here*
 
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
