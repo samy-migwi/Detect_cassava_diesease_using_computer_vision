@@ -1,53 +1,117 @@
-# Detect_cassava_diesease_using_computer_vision
-
 # Cassava Leaf Disease Classification
 
-I developed this project to classify cassava leaf diseases using deep learning techniques. It was part of a competition hosted on Kaggle, which aimed to improve the accuracy of detecting various diseases that affect cassava plants. The model I built can classify cassava leaves into one of five categories: Cassava Bacterial Blight (CBB), Cassava Brown Streak Disease (CBSD), Cassava Green Mottle (CGM), Cassava Mosaic Disease (CMD), and Healthy.
+![Cassava Leaf Disease Classification](https://your-image-url.com)
 
-#Project Overview
+*Classify cassava leaf diseases using deep learning techniques.*
 
-Cassava is a vital crop in many developing countries, providing a significant source of calories. However, its production is often threatened by various diseases. The purpose of this project is to leverage machine learning, specifically convolutional neural networks (CNNs), to accurately classify cassava leaf diseases, aiding in timely and precise treatment to ensure crop health and yield.
+<p align="center">
+  <a href="https://github.com/yourusername/cassava-leaf-disease-classification"><img src="https://img.shields.io/github/repo-size/yourusername/cassava-leaf-disease-classification" alt="Repo Size"></a>
+  <a href="https://www.linkedin.com/in/yourprofile"><img src="https://img.shields.io/badge/LinkedIn-Connect-blue" alt="LinkedIn"></a>
+  <a href="https://saythanks.io/to/morrislelebrock@gmail.com"><img src="https://img.shields.io/badge/SayThanks-%E2%98%BC-1EAEDB.svg" alt="Say Thanks"></a>
+</p>
 
-### Dataset
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Dataset](#dataset)
+- [Model Architecture](#model-architecture)
+- [Training](#training)
+- [Evaluation](#evaluation)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Results](#results)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-The dataset used for this project is provided by the Cassava Leaf Disease Classification competition on Kaggle. It contains 21,367 labeled images of cassava leaves categorized into one of five classes.
+## Project Overview
+Cassava is a vital crop in many developing countries, providing a significant source of calories. This project leverages convolutional neural networks (CNNs) to accurately classify cassava leaf diseases, aiding in timely and precise treatment to ensure crop health and yield.
 
-Number of classes: 5
-Total images: 21,367
-Training images: 17,115
-Validation images: 4,282
+## Dataset
+The dataset used for this project is from the Cassava Leaf Disease Classification competition on Kaggle.
 
-### Model Architecture
+- **Number of classes**: 5
+- **Total images**: 21,367
+- **Training images**: 17,115
+- **Validation images**: 4,282
 
-I built the model using TensorFlow and Keras. I experimented with various architectures, including:
+## Model Architecture
+The model was built using TensorFlow and Keras. Key architectures experimented with include:
 
-ResNet50
-EfficientNet
-VGG16
-I employed transfer learning, using pre-trained weights from ImageNet, and fine-tuned them for this specific classification task.
+- ResNet50
+- EfficientNet
+- VGG16
 
+Transfer learning was utilized with pre-trained weights from ImageNet, which were fine-tuned for this specific task.
 
 ## Training
+Training details:
 
-The model was trained on Google Colab with the following setup:
+- **Optimizer**: Adam
+- **Loss Function**: Categorical Crossentropy
+- **Metrics**: Accuracy
+- **Epochs**: 50
+- **Batch Size**: 32
 
-Optimizer: Adam
-Loss Function: Categorical Crossentropy
-Metrics: Accuracy
-Epochs: 50
-Batch Size: 32
-I applied data augmentation techniques to enhance the model's robustness and prevent overfitting.
+Data augmentation techniques were used to improve model performance and reduce overfitting.
+
+## Evaluation
+The model achieved an accuracy of 85% on the validation set. Metrics:
+
+- **Precision**: 0.XX
+- **Recall**: 0.XX
+- **F1-Score**: 0.XX
+
+A confusion matrix and classification report were also generated.
+
+## Installation
+To run this project locally:
+
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/cassava-leaf-disease-classification.git
+    ```
+
+2. **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. **Download the dataset** from Kaggle and place it in the `data/` directory.
+
+## Usage
+- **To train the model:**
+    ```bash
+    python train.py
+    ```
+
+- **To evaluate the model:**
+    ```bash
+    python evaluate.py
+    ```
+
+- **To make predictions:**
+    ```bash
+    python predict.py --image_path /path/to/image.jpg
+    ```
 
 ## Results
+The final model achieved 85% accuracy. Visualizations of model performance can be found below:
 
-The final model achieved an accuracy of 85% on the validation set. Below is a visualization of the model’s performance:
+*Include relevant visualizations here*
 
-### Acknowledgements
+## Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-* Kaggle for hosting the competition and providing the dataset.
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-* TensorFlow and Keras for the powerful deep learning tools.
+## Acknowledgements
+- Kaggle for hosting the competition and providing the dataset.
+- TensorFlow and Keras for the deep learning tools.
+- The open-source community for their resources and tutorials.
 
-* The open-source community for the resources and tutorials that helped make this project possible.
+---
 
-
+> [yourwebsite.com](https://yourwebsite.com) &nbsp;&middot;&nbsp;
+> GitHub [@yourusername](https://github.com/yourusername) &nbsp;&middot;&nbsp;
+> Twitter [@yourtwitterhandle](https://twitter.com/yourtwitterhandle)
